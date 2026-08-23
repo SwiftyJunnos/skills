@@ -217,6 +217,33 @@
       "skillFolderHash": "41c12c115b622e2a70d726f176766192ccb2d912",
       "installedAt": "2026-08-20T04:31:59.728Z",
       "updatedAt": "2026-08-20T04:31:59.728Z"
+    },
+    "humanize": {
+      "source": "epoko77-ai/im-not-ai",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/epoko77-ai/im-not-ai.git",
+      "skillPath": "skills/humanize/SKILL.md",
+      "skillFolderHash": "c59df1d5545903970e21f57d3d3259b4eb8735f2",
+      "installedAt": "2026-08-23T23:27:42.804Z",
+      "updatedAt": "2026-08-23T23:27:42.804Z"
+    },
+    "humanize-korean": {
+      "source": "epoko77-ai/im-not-ai",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/epoko77-ai/im-not-ai.git",
+      "skillPath": "skills/humanize-korean/SKILL.md",
+      "skillFolderHash": "d653872a5c65962863ab89bfd83f49262442340d",
+      "installedAt": "2026-08-23T23:27:42.806Z",
+      "updatedAt": "2026-08-23T23:27:42.806Z"
+    },
+    "humanize-redo": {
+      "source": "epoko77-ai/im-not-ai",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/epoko77-ai/im-not-ai.git",
+      "skillPath": "skills/humanize-redo/SKILL.md",
+      "skillFolderHash": "d04791feef6d13bf04e73a637f5e71c046041a78",
+      "installedAt": "2026-08-23T23:27:42.807Z",
+      "updatedAt": "2026-08-23T23:27:42.807Z"
     }
   },
   "dismissed": {
