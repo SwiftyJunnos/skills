@@ -1,51 +1,6 @@
 {
   "version": 3,
   "skills": {
-    "native-feel-cross-platform-desktop": {
-      "source": "yetone/native-feel-skill",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/yetone/native-feel-skill.git",
-      "skillPath": "SKILL.md",
-      "skillFolderHash": "9bd88c6378e1a80a4da165f3ee7bebb761a74945",
-      "installedAt": "2026-05-18T04:50:33.432Z",
-      "updatedAt": "2026-06-08T02:51:57.283Z"
-    },
-    "orchestration": {
-      "source": "stablyai/orca",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/stablyai/orca.git",
-      "skillPath": "skills/orchestration/SKILL.md",
-      "skillFolderHash": "9aa26fde93c0592e5983cdca1ccd33b402802255",
-      "installedAt": "2026-07-07T00:32:21.432Z",
-      "updatedAt": "2026-08-11T00:48:37.105Z"
-    },
-    "computer-use": {
-      "source": "stablyai/orca",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/stablyai/orca.git",
-      "skillPath": "skills/computer-use/SKILL.md",
-      "skillFolderHash": "2072384f53670cb61d93f4f6264ad2d8f6b5239c",
-      "installedAt": "2026-07-07T01:28:25.714Z",
-      "updatedAt": "2026-07-30T01:16:36.092Z"
-    },
-    "orca-cli": {
-      "source": "stablyai/orca",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/stablyai/orca.git",
-      "skillPath": "skills/orca-cli/SKILL.md",
-      "skillFolderHash": "a5a90c9731fbee834eca6d655b39eaa795dd2323",
-      "installedAt": "2026-07-07T01:29:06.533Z",
-      "updatedAt": "2026-08-11T00:48:37.098Z"
-    },
-    "agent-device": {
-      "source": "callstack/agent-device",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/callstack/agent-device.git",
-      "skillPath": "skills/agent-device/SKILL.md",
-      "skillFolderHash": "6f7b3d066d45a8293d8294002df81b5f21b0ab35",
-      "installedAt": "2026-07-10T15:37:07.492Z",
-      "updatedAt": "2026-07-10T15:37:07.492Z"
-    },
     "better-accessibility": {
       "source": "SwiftyJunnos/skills",
       "sourceType": "github",
@@ -108,15 +63,6 @@
       "skillFolderHash": "53c3b2c5dc11fe0ee4156468da27505df9239dc6",
       "installedAt": "2026-08-21T04:26:29.834Z",
       "updatedAt": "2026-08-21T04:26:29.834Z"
-    },
-    "but": {
-      "source": "SwiftyJunnos/skills",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/SwiftyJunnos/skills.git",
-      "skillPath": "skills/gitbutler/SKILL.md",
-      "skillFolderHash": "5c2b17f194ba9d9c938a325a01d7bbb79ad88c0e",
-      "installedAt": "2026-08-21T04:26:29.835Z",
-      "updatedAt": "2026-08-21T04:26:29.835Z"
     },
     "codebase-design": {
       "source": "SwiftyJunnos/skills",
@@ -342,6 +288,15 @@
       "skillFolderHash": "82571acae75a97764fa7899f10bd21d93a4f1414",
       "installedAt": "2026-08-31T00:52:50.905Z",
       "updatedAt": "2026-08-31T00:52:50.905Z"
+    },
+    "unslop-kr": {
+      "source": "SwiftyJunnos/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/SwiftyJunnos/skills.git",
+      "skillPath": "skills/unslop-kr/SKILL.md",
+      "skillFolderHash": "e0cff7f5d87da82901ae4c580dc4830e76ed200b",
+      "installedAt": "2026-08-24T00:39:11.000Z",
+      "updatedAt": "2026-08-24T00:39:11.000Z"
     }
   },
   "dismissed": {
