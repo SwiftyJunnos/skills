@@ -315,6 +315,15 @@
       "skillFolderHash": "b9dcfddcfa7ce43e2e4cf60e724c519be553f149",
       "installedAt": "2026-09-09T07:49:30.301Z",
       "updatedAt": "2026-09-09T07:49:30.301Z"
+    },
+    "show-me-your-work": {
+      "source": "cursor/plugins",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/cursor/plugins.git",
+      "skillPath": "pstack/skills/show-me-your-work/SKILL.md",
+      "skillFolderHash": "e1f90145ade0129913297a187566435d535f33a8",
+      "installedAt": "2026-09-11T07:19:56.126Z",
+      "updatedAt": "2026-09-11T07:19:56.126Z"
     }
   },
   "dismissed": {
