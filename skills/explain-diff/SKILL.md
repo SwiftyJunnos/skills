@@ -37,6 +37,73 @@ description: 코드 변경, diff, 브랜치 또는 PR을 깊이 있는 설명 �
 - 렌더링 전에 다섯 문항의 선택지 길이를 비교하고, 눈에 띄는 이상치나 반복되는 정답 길이 패턴을 고친다. 검증에 실패하면 우회하지 말고 선택지를 다시 쓴다.
 - 마크다운 출력에서는 정답을 문항 바로 아래에 보여주지 말고 문서 끝 해설 섹션에 정답·피드백을 모아 둔다. 독자가 먼저 스스로 답해볼 기회를 주기 위함이다.
 
+## 마크다운 이중 출력 계약
+
+퀴즈가 있는 `.md`는 사람이 읽는 출력과 소비자가 읽는 숨은 정본을 함께 갖는다. 정본을 먼저 만들고, 모든 표현을 그 데이터에서 파생한다.
+
+### 정본 메타데이터
+
+다음 블록을 코드 펜스 밖 문서 최상위에 정확히 하나 둔다. 메타데이터는 질문 영역과 답변 영역 밖에 둔다.
+
+```html
+<!-- explain-diff-quiz:v1
+{...strict JSON on one line...}
+-->
+```
+
+첫 줄은 `<!-- explain-diff-quiz:v1`, 다음 줄은 주석이나 후행 쉼표가 없는 JSON 한 줄, 마지막 줄은 `-->`여야 한다. 문자열의 공백은 보존하고 줄바꿈은 JSON 이스케이프로 쓴다. 위 블록은 배치 예시이며, 실제 출력에는 아래 스키마를 만족하는 완전한 JSON을 넣는다.
+
+```ts
+type QuizOption = {
+  id: "a" | "b" | "c" | "d";
+  text: string;       // non-empty plain text; never interpreted as HTML
+  correct: boolean;
+  feedback: string;   // non-empty plain text; never interpreted as HTML
+};
+type QuizQuestion = {
+  id: "q1" | "q2" | "q3" | "q4" | "q5";
+  question: string;   // non-empty plain text; never interpreted as HTML
+  options: QuizOption[]; // exactly 3 or 4, ids are a..c or a..d in order
+};
+type ExplainDiffQuiz = {
+  version: 1;
+  language: string;   // /^[A-Za-z]{2,3}(?:-[A-Za-z0-9]+)*$/, normally "ko" or "en"
+  quiz: [QuizQuestion, QuizQuestion, QuizQuestion, QuizQuestion, QuizQuestion];
+};
+```
+
+실제 JSON에는 위 필드만 포함한다. 문항 id는 `q1`부터 `q5`까지, 선택지 id는 `a`부터 `c` 또는 `d`까지 순서대로 쓴다. 각 문항에는 3~4개의 선택지와 정확히 하나의 `correct: true`, 공백뿐이지 않은 질문·선택지·피드백이 있어야 한다. 소비자는 중복 키를 거부하는 strict JSON 파서와 스키마 검사로 필드 누락·추가 필드·잘못된 타입이나 id를 거부한다. 메타데이터 버전과 블록 버전은 모두 1이어야 한다. JSON 문자열의 리터럴 `<`, `>`, `&`, `-`는 각각 `\u003c`, `\u003e`, `\u0026`, `\u002d`로 직렬화한다. 코드 예시의 `-->`나 `<script>`도 일반 텍스트로 보존하되, 주석을 닫거나 HTML로 실행하지 못하게 한다.
+
+### 생성 순서와 마크다운 폴백
+
+1. 변경을 설명할 산문과 퀴즈 데이터를 작성한다. 위 퀴즈 규칙과 품질 게이트를 정본 데이터에 적용한다.
+2. `humanize-korean`을 산문과 퀴즈 문자열에 적용한다. 사람이 문구를 고치면 정본 데이터를 갱신한 것으로 보고, 아래 두 영역과 HTML 스펙을 모두 다시 생성한다.
+3. 최종 정본에 스키마와 모든 퀴즈 품질 게이트를 다시 적용한다. 실패하면 우회하지 말고 정본을 고친다. 통과한 정본을 strict serializer로 메타데이터 주석으로 쓰고, 질문은 다음 경계 안에서 같은 정본으로 생성한다. 질문 바로 아래에는 답이나 피드백을 쓰지 않는다.
+
+   ```html
+   <!-- explain-diff:quiz:v1:start -->
+   ... five human-readable questions ...
+   <!-- explain-diff:quiz:v1:end -->
+   ```
+
+4. 문서 끝에 같은 정본에서 생성한 답변·피드백을 다음 경계 안에 둔다. 이 영역은 사람이 먼저 풀 수 있도록 질문 영역과 분리한다.
+
+   ```html
+   <!-- explain-diff:answers:v1:start -->
+   ## 정답 및 피드백
+   ... answers and feedback for q1 through q5 ...
+   <!-- explain-diff:answers:v1:end -->
+   ```
+
+질문과 답변 영역의 표식은 각각 한 번씩, 들여쓰기 없이 문서 최상위에 홀로 둔다. 표식 앞뒤에는 빈 줄을 둔다. 영역은 질문 시작 → 질문 끝 → 해설 시작 → 해설 끝 순서로 배치하고 중첩하지 않는다. 표식은 교체 경계일 뿐, 목록에서 문항 데이터를 추론하는 단서가 아니다. 보이는 문항·선택지·해설은 Markdown 문법과 HTML 특수 문자를 이스케이프해 정본의 텍스트로 읽히게 한다. 정본과 두 영역은 함께 재생성하며, 한쪽만 수정해 서로 어긋나게 두지 않는다.
+
+### 미래 웹 소비자의 실패 동작
+
+웹 소비자는 렌더링된 DOM이 아니라 HTML 주석을 보존한 원본 Markdown AST의 최상위 HTML 노드에서 메타데이터를 읽는다. 코드 펜스·인용문·목록 안의 예시 주석은 대상이 아니다. 주석 인식과 raw HTML 렌더링은 별개이며, 파싱을 위해 임의의 HTML 실행을 허용하지 않는다. 유효한 정본과 두 영역 구조를 모두 찾았을 때만 해당 영역을 GUI로 교체하고 산문과 diff는 보존한다. 메타데이터 누락, 지원하지 않는 버전, JSON 오류, 표식 누락·중복·순서 오류가 있으면 GUI를 만들지 않고 원본 Markdown을 보여 준다. 제목이나 목록으로 데이터를 추측하지 않는다. 원본에는 정답이 공개되므로 시험 보안은 목표가 아니다.
+
+이 절은 웹 구현을 위한 규약이며, 스킬 수정만으로 웹 파서나 GUI가 추가되지는 않는다. HTML 주석을 제거하는 일반 Markdown 뷰어에서도 보이는 문제와 해설은 남아야 한다.
+
+
 ## 직관 강화: 마이크로월드 (선택)
 
 설명만으로는 부족한 변경에는 **마이크로월드**(Seymour Papert의 Mathland)를 만든다. 에이전트는 "코드를 이해시키는 코드"를 쓸 수 있다.
@@ -71,9 +138,13 @@ python3 render.py --help
 python3 render.py <spec.json> -o <output.html>
 ```
 
-`sections[].html`에는 Markdown이 아닌 raw HTML을 넣는다. 코드 블록은 `<pre><code class="language-{언어}">...</code></pre>`(코드 안의 `<`, `>`, `&`는 HTML 엔티티로 이스케이프), 흐름도는 `.diagram`·`.flow`·`.box`·`.box.fail`, 핵심 정의와 예외는 `.callout`, 비교는 `<table>`을 사용한다. 렌더러가 CSS, JavaScript, 문법 강조, 문서 골격, 목차, 선택지 순서 무작위화, 언어별 UI 문구를 처리하도록 맡긴다.
+HTML 스펙의 `quiz`는 정본 `quiz`에서 매핑해 만든다. 각 문항과 선택지의 `id`는 버리고 `question`, `options[].text`, `options[].correct`, `options[].feedback`만 같은 값으로 전달한다. 이 값들은 plain string으로 그대로 넘긴다. `render.py`가 퀴즈 질문·선택지·피드백을 HTML 이스케이프하므로 어댑터에서 미리 이스케이프하면 안 된다. `render.py`는 Markdown을 파싱하지 않는다.
+
+`sections[].html`에는 Markdown이 아닌 raw HTML을 넣는다. 코드 블록은 `<pre><code class="language-{언어}">...</code></pre>`(코드 안의 `<`, `>`, `&`는 HTML 엔티티로 이스케이프), 흐름도는 `.diagram`·`.flow`·`.box`·`.box.fail`, 핵심 정의와 예외는 `.callout`, 비교는 `<table>`을 사용한다. raw HTML에 삽입하는 산문·코드 문자열은 어댑터에서 HTML 이스케이프한다. 렌더러가 CSS, JavaScript, 문법 강조, 문서 골격, 목차, 선택지 순서 무작위화, 언어별 UI 문구를 처리하도록 맡긴다.
 
 파일은 코드 저장소 밖(예: `/tmp`)에 두는 것을 권장한다. `-o`를 생략하면 스펙 파일이 있는 폴더에 `YYYY-MM-DD-explanation-<slug>.html`로 저장된다. 날짜 접두사는 시간 순 정렬과 버전 관리 밖 보관을 위한 것이다.
+
+HTML을 만들 때도 먼저 정본을 humanize하고 검증한 뒤 같은 데이터로 Markdown 두 영역과 `spec.quiz`를 생성한다. HTML과 Markdown의 퀴즈 문구를 따로 쓰지 않는다.
 
 ### 공유 공간 페이지 (Notion/Outline)
 
@@ -81,7 +152,7 @@ python3 render.py <spec.json> -o <output.html>
 
 - Notion MCP 도구가 있으면 새 페이지를 만들고 URL을 반환한다. (발표자 기본 동작)
 - 이 워크스페이스처럼 Outline이 지식 SoT인 환경에서는 outline MCP 도구로 문서를 만든다.
-- 퀴즈는 토글 블록으로 표현한다. 문항 아래 각 선택지를 토글로 두고, 펼치면 ✅(정답)/❌(오답) 판정과 설명이 보이게 한다:
+- 퀴즈는 정본 데이터에서 토글 블록으로 표현한다. 문항 아래 각 선택지를 토글로 두고, 펼치면 ✅(정답)/❌(오답) 판정과 설명이 보이게 한다:
 
 ```markdown
 1. Question
@@ -93,11 +164,11 @@ python3 render.py <spec.json> -o <output.html>
     ❌ 어떤 전제를 잘못 이해했는지에 대한 설명
 ```
 
-토글로 숨겨두므로 독자가 먼저 스스로 답해볼 기회가 유지된다. 선택지 품질 규칙(길이 단서 금지, 전 선택지 피드백)은 동일하게 적용한다.
+토글로 숨겨두므로 독자가 먼저 스스로 답해볼 기회가 유지된다. 선택지 품질 규칙(길이 단서 금지, 전 선택지 피드백)은 동일하게 적용한다. 공유 공간 도구가 HTML 주석을 제거할 수 있으므로 원본 `.md` 산출물을 보존하고, 주석을 제거한 페이지가 Markdown과 완전히 왕복된다고 말하지 않는다.
 
 ## 한국어 (기본 언어)
 
-explainer 문서는 한국어를 기본 언어로 작성한다. 최종 문서를 만들기 전에 `humanize-korean` 스킬을 1회 적용해 AI 티를 제거한다. HTML 변형은 스펙에 `"language": "ko"`를 지정해 퀴즈 UI 문구(정답/오답 등)가 한국어로 렌더링되게 한다. 영어 문서가 명시적으로 요청된 경우에만 영어로 작성한다.
+explainer 문서는 한국어를 기본 언어로 작성한다. 문서를 만들기 전에 `humanize-korean` 스킬을 1회 적용하며, 퀴즈 문자열도 정본 데이터의 일부로 함께 humanize한다. 그 결과로 정본 메타데이터, Markdown 질문·답변 영역, HTML `spec.quiz`를 모두 다시 생성한다. HTML 변형은 정본의 `"language": "ko"`를 스펙에 전달해 퀴즈 UI 문구(정답/오답 등)를 한국어로 렌더링되게 한다. 영어 문서가 명시적으로 요청된 경우에만 영어로 작성한다.
 
 ## 참고
 
