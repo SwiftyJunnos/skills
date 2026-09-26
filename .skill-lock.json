@@ -105,9 +105,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/SwiftyJunnos/skills.git",
       "skillPath": "skills/explain-diff/SKILL.md",
-      "skillFolderHash": "93d0b247d55c0df401e9f9560edb94f702797ed8",
+      "skillFolderHash": "c812bbb8e3437b95d2cb47ab3217444b966a0c71",
       "installedAt": "2026-08-21T04:26:29.839Z",
-      "updatedAt": "2026-08-21T04:26:29.839Z"
+      "updatedAt": "2026-09-26T07:45:28.508Z"
     },
     "grill-me": {
       "source": "SwiftyJunnos/skills",
@@ -222,18 +222,18 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/epoko77-ai/im-not-ai.git",
       "skillPath": "skills/humanize/SKILL.md",
-      "skillFolderHash": "c59df1d5545903970e21f57d3d3259b4eb8735f2",
+      "skillFolderHash": "ee75b50721e639e795bade7f77df192a9f55855e",
       "installedAt": "2026-08-27T23:17:11.389Z",
-      "updatedAt": "2026-08-27T23:17:11.389Z"
+      "updatedAt": "2026-09-26T07:45:30.486Z"
     },
     "humanize-korean": {
       "source": "epoko77-ai/im-not-ai",
       "sourceType": "github",
       "sourceUrl": "https://github.com/epoko77-ai/im-not-ai.git",
       "skillPath": "skills/humanize-korean/SKILL.md",
-      "skillFolderHash": "9a18003d5b563d39457b7257fe519cd8d68fef47",
+      "skillFolderHash": "805dddd7b5b80c4aab83566d4980bc2873627653",
       "installedAt": "2026-08-27T23:17:11.390Z",
-      "updatedAt": "2026-09-17T23:27:33.621Z"
+      "updatedAt": "2026-09-26T07:45:32.445Z"
     },
     "humanize-redo": {
       "source": "epoko77-ai/im-not-ai",
@@ -321,9 +321,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/cursor/plugins.git",
       "skillPath": "pstack/skills/show-me-your-work/SKILL.md",
-      "skillFolderHash": "e1f90145ade0129913297a187566435d535f33a8",
+      "skillFolderHash": "5ecdc5d5f4b2126b2d28f0bbb091bd5454d7086e",
       "installedAt": "2026-09-11T07:19:56.126Z",
-      "updatedAt": "2026-09-11T07:19:56.126Z"
+      "updatedAt": "2026-09-26T07:45:34.415Z"
     }
   },
   "dismissed": {
