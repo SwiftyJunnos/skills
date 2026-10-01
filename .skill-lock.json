@@ -152,7 +152,7 @@
       "skillPath": "skills/prototype/SKILL.md",
       "skillFolderHash": "34cd3a303aef0a975fcce3ac906d6b293e600399",
       "installedAt": "2026-08-21T04:26:29.842Z",
-      "updatedAt": "2026-09-17T23:27:23.043Z"
+      "updatedAt": "2026-10-01T02:48:35.684Z"
     },
     "teach": {
       "source": "SwiftyJunnos/skills",
@@ -242,7 +242,7 @@
       "skillPath": "skills/animate/SKILL.md",
       "skillFolderHash": "a92e36f28d741aee4ff77d1a001300d7e86e07fe",
       "installedAt": "2026-08-31T00:52:50.903Z",
-      "updatedAt": "2026-09-17T23:27:24.737Z"
+      "updatedAt": "2026-10-01T02:48:37.593Z"
     },
     "animation-vocabulary": {
       "source": "emilkowalski/skill",
@@ -251,7 +251,7 @@
       "skillPath": "skills/animation-vocabulary/SKILL.md",
       "skillFolderHash": "d49565744427887a1f719de1ceee04d941d4e681",
       "installedAt": "2026-08-31T00:52:50.903Z",
-      "updatedAt": "2026-09-17T23:27:26.334Z"
+      "updatedAt": "2026-10-01T02:48:39.227Z"
     },
     "find-animation-opportunities": {
       "source": "emilkowalski/skill",
@@ -260,7 +260,7 @@
       "skillPath": "skills/find-animation-opportunities/SKILL.md",
       "skillFolderHash": "e6443880f38e33cf78e5d678471eed35e8566763",
       "installedAt": "2026-08-31T00:52:50.904Z",
-      "updatedAt": "2026-09-17T23:27:27.946Z"
+      "updatedAt": "2026-10-01T02:48:40.821Z"
     },
     "improve-animations": {
       "source": "emilkowalski/skill",
@@ -269,7 +269,7 @@
       "skillPath": "skills/improve-animations/SKILL.md",
       "skillFolderHash": "cf1f7aabac34c08f2cf833f039fa99af2f415183",
       "installedAt": "2026-08-31T00:52:50.904Z",
-      "updatedAt": "2026-09-17T23:27:29.736Z"
+      "updatedAt": "2026-10-01T02:48:42.351Z"
     },
     "review-animations": {
       "source": "emilkowalski/skill",
@@ -278,7 +278,7 @@
       "skillPath": "skills/review-animations/SKILL.md",
       "skillFolderHash": "0e0d3cb3e07ca307fe946ccaf57f6c82eb75124a",
       "installedAt": "2026-08-31T00:52:50.905Z",
-      "updatedAt": "2026-09-17T23:27:31.498Z"
+      "updatedAt": "2026-10-01T02:48:43.973Z"
     },
     "unslop-kr": {
       "source": "SwiftyJunnos/skills",
