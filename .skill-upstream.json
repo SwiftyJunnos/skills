@@ -1,0 +1,217 @@
+{
+  "version": 1,
+  "upstreamSource": "mattpocock/skills",
+  "upstreamSourceUrl": "https://github.com/mattpocock/skills",
+  "upstreamRevision": "d81f3a183412e71a5b1e84ca21bc1a35eea03a60",
+  "checkedAt": "2026-10-01T03:03:57Z",
+  "installationLockPolicy": "Treat .skill-lock.json as provenance for skills currently installed locally, not an immutable snapshot. Matt upstream tracking is recorded separately here; standard skills CLI does not automatically consume this file.",
+  "skills": {
+    "codebase-design": {
+      "localPath": "skills/codebase-design",
+      "installedSource": "SwiftyJunnos/skills",
+      "upstreamPath": "skills/engineering/codebase-design",
+      "upstreamTreeHash": "07ba1cd60efc12d0d3a083005c1d9651cf15e39a",
+      "state": "current",
+      "lastAction": "updated",
+      "comparison": "exact",
+      "fileSha256": {
+        "DEEPENING.md": "f3dd099ce99289bd213914d8ee3e2429b78309c3957ca4583f7659551b1d53c1",
+        "DESIGN-IT-TWICE.md": "52b52e75655a27aea59c6966b410bac82448968ad46ef1ebb9f07c274e3ae010",
+        "SKILL.md": "2c20617f87ec8af6a434859f381b2f061a69b530444e74eb39e78bb016a6d1e2",
+        "agents/openai.yaml": "edebc9e4fcfe102114012575eaa9600b9b5fd08c311664f389c36e7bc717740f"
+      }
+    },
+    "diagnosing-bugs": {
+      "localPath": "skills/diagnosing-bugs",
+      "installedSource": "SwiftyJunnos/skills",
+      "upstreamPath": "skills/engineering/diagnosing-bugs",
+      "upstreamTreeHash": "de4236cf34757c4e9ea7afe78d46c023213ff254",
+      "state": "current",
+      "lastAction": "updated",
+      "comparison": "exact",
+      "fileSha256": {
+        "SKILL.md": "9168404abda0967a5d32977e3498cd95fda6807018852f3de736a78357c82b40",
+        "agents/openai.yaml": "3e430dbe4334a87597488c060cb3dc3786bb00c9182877d6f5ec41f62490e90b",
+        "scripts/hitl-loop.template.sh": "35103539fc36873eea36074769ad454f9379d6fc8b2dc0e26ce987fd3bfe5503"
+      }
+    },
+    "domain-modeling": {
+      "localPath": "skills/domain-modeling",
+      "installedSource": "SwiftyJunnos/skills",
+      "upstreamPath": "skills/engineering/domain-modeling",
+      "upstreamTreeHash": "ea30ee454ba264543dbe40737973b1a5afb9f0e6",
+      "state": "current",
+      "lastAction": "updated",
+      "comparison": "exact",
+      "fileSha256": {
+        "ADR-FORMAT.md": "944c92aa790e8fbdc9199640b170979abb8a34ba8d0fe18c2a01a63bce140ca0",
+        "GLOSSARY-FORMAT.md": "21dcc40cdec8e151a829b98ab1517c1867bc444e3665134a98c6983411996801",
+        "SKILL.md": "7b925d7b1e341a2eeae33ad68a8a8c0ab889a38ddd22a7598e4c240e5a7556a3",
+        "agents/openai.yaml": "f6bf2aa996c6e6f53fdd0708e18a0d16a56aed8322cca59fedbe3c0d2c75f06b"
+      }
+    },
+    "grill-with-docs": {
+      "localPath": "skills/grill-with-docs",
+      "installedSource": "SwiftyJunnos/skills",
+      "upstreamPath": "skills/engineering/grill-with-docs",
+      "upstreamTreeHash": "eedaf2562c83155115e9c649fa3ecaac2e10e81d",
+      "state": "current",
+      "lastAction": "already-current",
+      "comparison": "exact",
+      "fileSha256": {
+        "SKILL.md": "7de372c13488f1ee96cc11cd8907b56b6809cc93eef776eeddd37de6b6cbe3fe",
+        "agents/openai.yaml": "94cd0ab161fb468a836349f5ed482ba58ce8e709a05c57ce533d739dbd35cca9"
+      }
+    },
+    "wizard": {
+      "localPath": "skills/wizard",
+      "installedSource": "SwiftyJunnos/skills",
+      "upstreamPath": "skills/engineering/wizard",
+      "upstreamTreeHash": "0a163daf092c6f361158ca9627e81f2cb5230574",
+      "state": "current",
+      "lastAction": "already-current",
+      "comparison": "exact",
+      "fileSha256": {
+        "SKILL.md": "bdf31d48211ea559878f95a4f344aeabf8d85897488ba564382bab0b000daac1",
+        "agents/openai.yaml": "98f44d682d58e262f160dc59a8befc365e0aa65820dd0261864af26aa8e59d83",
+        "template.sh": "33cbe9dfb1d0e9185b60248a52aabed14bc64785a00cac695e302e739dd6c153"
+      }
+    },
+    "grill-me": {
+      "localPath": "skills/grill-me",
+      "installedSource": "SwiftyJunnos/skills",
+      "upstreamPath": "skills/productivity/grill-me",
+      "upstreamTreeHash": "3df14e2d3a89459bf300614be9247e3ce74798f8",
+      "state": "current",
+      "lastAction": "already-current",
+      "comparison": "exact",
+      "fileSha256": {
+        "SKILL.md": "caaf8b8de1684f96e26b28f3c29189db5c89cce4b73e1c93d86164f66ef88637",
+        "agents/openai.yaml": "c061e39c3e0f9d865fb1b97556d485704af2a8a58f4b8221a8917a5c2074a32b"
+      }
+    },
+    "grilling": {
+      "localPath": "skills/grilling",
+      "installedSource": "SwiftyJunnos/skills",
+      "upstreamPath": "skills/productivity/grilling",
+      "upstreamTreeHash": "f0732035b8b1b60ae39454e4191caef32fa91903",
+      "state": "current",
+      "lastAction": "already-current",
+      "comparison": "exact",
+      "fileSha256": {
+        "SKILL.md": "10ff989e7498b23b5acb49d5048f11dcd906757d2f79c5cdf8a00001381296f2",
+        "agents/openai.yaml": "1411d7df7d99b7e621a1ff8283c8133cc2464be63d064e52d8ce169c6800ee9b"
+      }
+    },
+    "teach": {
+      "localPath": "skills/teach",
+      "installedSource": "SwiftyJunnos/skills",
+      "upstreamPath": "skills/productivity/teach",
+      "upstreamTreeHash": "2ab11f2f51f3c29771edb5d4258d807a49462491",
+      "state": "current",
+      "lastAction": "already-current",
+      "comparison": "exact",
+      "fileSha256": {
+        "GLOSSARY-FORMAT.md": "9b99859ec28437668130d8f2ce5a342938970f8a1ed4fd38c3eab4f4b5fff210",
+        "LEARNING-RECORD-FORMAT.md": "701fa34b6748aa89e6c960ffb815257f481a7d77fb2900f9028f7edf3fdd6052",
+        "MISSION-FORMAT.md": "8cacbb3c0644d3ae0ea4965564797099401a6930a23f7cf462918576587f2418",
+        "RESOURCES-FORMAT.md": "e9cacf34026e11a8d1c8f9de88abe5bcbf654f4ebdb25cae8c0de0d5f48f44ec",
+        "SKILL.md": "a32df9dcdfc0c4fdc1c98e1ed3940c5f56b84c1aa90ff60346f32b8b53915b43",
+        "agents/openai.yaml": "5856f3ae8aec742f1499c640aecdd5f1d6af5fa210a7c6ec794de8263a6f733f"
+      }
+    },
+    "writing-for-agents": {
+      "localPath": "skills/writing-for-agents",
+      "installedSource": "SwiftyJunnos/skills",
+      "upstreamPath": "skills/productivity/writing-for-agents",
+      "upstreamTreeHash": "ad2925850efb8973a72d2e666f7a975f9a2d4a9b",
+      "state": "current",
+      "lastAction": "already-current",
+      "comparison": "exact",
+      "fileSha256": {
+        "SKILL-MECHANICS.md": "c768e6307c7c10728c401c213f2c4ba71c542127eeb7ad2956aabd15a0fa0059",
+        "SKILL.md": "551adca942227b44192edba88acd4e8db911f0121ce58ad16944ccf6a896a74a",
+        "agents/openai.yaml": "eacb24b2a618cfb81dacb0416f4fdd75ddf3a8060f8ddb99aae1b1e301907e4b"
+      }
+    }
+  },
+  "retiredSkills": {
+    "resolving-merge-conflicts": {
+      "localPath": "skills/resolving-merge-conflicts",
+      "installedSource": "SwiftyJunnos/skills",
+      "upstreamPath": "skills/engineering/resolving-merge-conflicts",
+      "upstreamTreeHash": null,
+      "state": "retired-upstream",
+      "localState": "removed",
+      "lastAction": "removed-local",
+      "removedAt": "2026-10-01T03:47:01Z",
+      "removedAtSource": ".skill-lock.json modification time from the removal command",
+      "removedInCommit": "daa01d8aa68ad5c61b68970ec2018d0ce9567be6",
+      "removalSourceUrl": "https://github.com/mattpocock/skills/commit/daa01d8aa68ad5c61b68970ec2018d0ce9567be6",
+      "lastPresentRevision": "c55ee46073ed923f86ce59a5eb3b6d895095d1b7",
+      "evidence": "Local SKILL.md matches the upstream file at lastPresentRevision. Upstream removed the skill with no replacement. Retained the installed local folder before user-authorized local removal.",
+      "lastInstalledFileSha256": {
+        "SKILL.md": "9d8114f8ef0b31f535a265fc05c364bd8cf2e2895a830040e06c22acb11f54b0",
+        "agents/openai.yaml": "a1f4f96838f2ed6282eb28abbbf99029cb8fadce552baf53da90a025b8bffddf"
+      }
+    }
+  },
+  "changes": {
+    "modified": [
+      "skills/codebase-design/DESIGN-IT-TWICE.md",
+      "skills/diagnosing-bugs/SKILL.md",
+      "skills/domain-modeling/SKILL.md"
+    ],
+    "added": [
+      "skills/domain-modeling/GLOSSARY-FORMAT.md"
+    ],
+    "removed": [
+      "skills/domain-modeling/CONTEXT-FORMAT.md"
+    ]
+  },
+  "verification": {
+    "currentSkills": 9,
+    "currentFiles": 29,
+    "fileContentsAndModes": "exact upstream",
+    "relativeMarkdownReferences": "resolve outside fenced examples",
+    "installationDiscoveryCommand": "npx --yes skills list --global",
+    "unrelatedSkills": "unchanged"
+  },
+  "changeLog": [
+    {
+      "checkedAt": "2026-10-01T03:03:57Z",
+      "upstreamRevision": "d81f3a183412e71a5b1e84ca21bc1a35eea03a60",
+      "updated": [
+        "codebase-design",
+        "diagnosing-bugs",
+        "domain-modeling"
+      ],
+      "details": [
+        "codebase-design/DESIGN-IT-TWICE.md: use project GLOSSARY.md vocabulary.",
+        "diagnosing-bugs/SKILL.md: read GLOSSARY.md. Existing secret-redaction guidance unchanged.",
+        "domain-modeling: migrate CONTEXT.md/CONTEXT-MAP.md to GLOSSARY.md/GLOSSARY-MAP.md and replace CONTEXT-FORMAT.md with GLOSSARY-FORMAT.md."
+      ],
+      "alreadyCurrent": [
+        "grill-me",
+        "grill-with-docs",
+        "grilling",
+        "teach",
+        "wizard",
+        "writing-for-agents"
+      ],
+      "retiredRetained": [
+        "resolving-merge-conflicts"
+      ]
+    },
+    {
+      "removedAt": "2026-10-01T03:47:01Z",
+      "upstreamRevision": "d81f3a183412e71a5b1e84ca21bc1a35eea03a60",
+      "removedLocal": [
+        "resolving-merge-conflicts"
+      ],
+      "details": [
+        "User-authorized local removal of resolving-merge-conflicts."
+      ]
+    }
+  ]
+}
