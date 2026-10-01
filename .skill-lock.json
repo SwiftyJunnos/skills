@@ -154,15 +154,6 @@
       "installedAt": "2026-08-21T04:26:29.842Z",
       "updatedAt": "2026-09-17T23:27:23.043Z"
     },
-    "resolving-merge-conflicts": {
-      "source": "SwiftyJunnos/skills",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/SwiftyJunnos/skills.git",
-      "skillPath": "skills/resolving-merge-conflicts/SKILL.md",
-      "skillFolderHash": "77f0d7de3143abbf03e55a63522d30bff31ae908",
-      "installedAt": "2026-08-21T04:26:29.842Z",
-      "updatedAt": "2026-08-21T04:26:29.842Z"
-    },
     "teach": {
       "source": "SwiftyJunnos/skills",
       "sourceType": "github",
