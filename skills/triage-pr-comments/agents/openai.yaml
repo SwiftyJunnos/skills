@@ -1,0 +1,3 @@
+interface:
+  display_name: "PR 코멘트 처리"
+  short_description: "PR 코멘트를 판단하고 수정·검증·답댓글·resolve까지 처리"
