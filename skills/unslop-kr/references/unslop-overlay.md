@@ -1,54 +1,87 @@
-# Unslop 한국어 보정 규칙
+# AI-artifact edits
 
-이 파일은 `humanize-korean`의 분류 체계에 없는 판단만 보탠다. 기본 규칙과 충돌하면 의미 보존, 서법 보존, 인용 보존 순서로 판단한다.
+Use these rules after the applicable sentence rules. They replace external
+pattern taxonomies with local, source-preserving editorial decisions.
+Apply only patterns found in the draft, subject to SKILL.md's acceptance gates.
 
-## 1. 글쓴이의 목소리
+## Voice and certainty
 
-- 원문에 있는 판단, 망설임, 농담, 불편함은 살린다. 중립적인 요약문으로 평탄화하지 않는다.
-- 원문에 없는 의견, 감정, 1인칭, 비유는 넣지 않는다. "사람 냄새"를 만든다는 이유로 내용을 보태면 실패다.
-- 문장 길이와 종결을 기계적으로 번갈아 배치하지 않는다. 원문의 호흡을 기준으로, 반복이 두드러지는 대목만 고친다.
-- 모든 문단을 같은 짜임으로 정리하지 않는다. 매끈함보다 글쓴이의 기존 버릇을 우선한다.
+- Keep existing judgment, hesitation, humor, discomfort, and viewpoint. Preserve
+  real uncertainty; repeated hedge markers may be simplified without making
+  the claim stronger. Natural Korean subject omission can remain.
+- Preserve technical terms, genuine names, and metaphors required by the genre.
+  Remove decorative language around an anchor rather than deleting the anchor.
+- Avoid manufacturing a lively voice with new opinions, first-person pronouns,
+  feelings, jokes, or comparisons. Preserve the source's voice instead.
 
-## 2. 근거와 구체성
+## Concrete wording
 
-- "전문가들은", "업계에서는", "일각에서는"처럼 출처가 흐린 표현은 원문 안에 출처가 있을 때만 구체화한다. 출처를 새로 만들지 않는다.
-- 막연한 평가를 같은 문단의 사실이나 수치로 바꿀 수 있으면 바꾼다. 근거가 없으면 평가를 부풀리지 않는다.
-- 매체, 기업, 인물을 줄줄이 나열하지 않는다. 각 이름이 주장에 필요한 이유가 없다면 주변 수식만 덜어낸다. 고유명사 자체는 보존한다.
-- "중요하다", "인상적이다", "우려스럽다"로 끝내지 않는다. 원문에 이유가 있으면 그 이유를 앞으로 당긴다. 이유가 없으면 의미를 추가하지 말고 원래 판단을 남긴다.
+- Replace `역할을 수행한다`, `의미를 지닌다`, and similar empty support phrases
+  with the actual predicate when supplied.
+- Replace vague praise or criticism with the supporting fact already in the
+  passage. If the reason is absent, retain the judgment without embellishment.
+- Clarify `전문가들은`, `업계에서는`, and `일각에서는` only with a source already
+  in the draft. Preserve uncertainty about attribution when no source exists.
+- Keep every proper name necessary to the claim. Reduce decorative name-dropping
+  by removing surrounding praise rather than deleting protected names.
+- Preserve time, frequency, degree, and limits expressed by an adverb. Remove
+  intensifiers only when they contribute no distinct claim or confidence.
 
-## 3. 군더더기 없는 한국어
+## Formulaic prose
 
-- "역할을 수행한다", "기회를 제공한다", "의미를 지닌다", "특징을 보인다"는 실제 동사가 있으면 그 동사로 쓴다.
-- 같은 대상을 문단마다 다른 말로 바꾸지 않는다. 용어 하나를 정해 반복한다. 정확한 전문 용어는 쉬운 말로 억지로 풀지 않는다.
-- "A뿐만 아니라 B", "A를 넘어 B", "A에서 B까지"는 관계가 실제로 성립할 때만 남긴다. 장식용 대구와 가짜 범위는 평서문으로 푼다.
-- 긴 문장은 독자가 되돌아 읽어야 하는 지점에서 나눈다. 짧다는 이유만으로 문장을 합치지 않는다.
-- 번역투 피동은 행위자가 원문에 있을 때 능동으로 바꾼다. 한국어에서 자연스러운 주어 생략은 유지한다. 행위자를 추측해 넣지 않는다.
-- 부사와 수식어는 주장 강도나 시간, 빈도를 바꾸지 않는 범위에서만 덜어낸다.
-- 추상적인 기술 은유는 실제 대상을 적는다. 다만 API surface, test harness처럼 프로젝트가 쓰는 전문 용어라면 보존한다.
+- Replace decorative `A뿐만 아니라 B`, `A를 넘어 B`, and `A에서 B까지` with
+  direct statements when the claimed relationship is empty. Preserve real
+  inclusion, contrast, progression, and ranges.
+- Trim repeated `결론적으로`, `요약하자면`, `따라서`, and `즉` when the paragraph
+  already establishes the relation. Keep connectives needed for causality.
+- Replace `시사하는 바가 크다`, `주목할 만하다`, and `매우 중요하다` with an
+  existing concrete consequence when possible; otherwise retain the actual
+  judgment instead of inventing its reason.
+- Omit repeated announcements such as `다음과 같습니다`, `살펴보겠습니다`,
+  and `정리해 보겠습니다` when the content immediately follows. Preserve real
+  future commitments and reporting of work that has not yet happened.
+- Remove empty closing forecasts or limitations only when they add no distinct
+  uncertainty, scope restriction, or incomplete result.
 
-## 4. 구조와 문장부호
+## Rhythm and structure
 
-- 새 대시를 넣지 않는다. 원문의 대시가 인용이나 의미 구분에 필요하면 보존한다. 반복되는 부연 대시는 쉼표나 별도 문장으로 고치되 괄호를 대체품처럼 남발하지 않는다.
-- 콜론은 목록, 정의, 예시 앞에서만 쓴다. 문장 중간의 전환 장치로 쓰지 않는다.
-- 굵은 글씨가 문장 내용을 되풀이하는 불릿은 산문이나 짧은 항목으로 바꾼다. 실제 절 제목과 스캔에 필요한 목록은 유지한다.
-- 장식용 이모지와 강조 따옴표는 뺀다. 직접 인용의 따옴표와 글리프는 원문 그대로 둔다.
-- 제목과 소제목은 한국어 문장식으로 쓴다. 영어 제목의 대소문자는 고유 표기나 인용이 아니면 문서 관례를 따른다.
+- Fix repetition where it causes rereading; preserve deliberate cadence.
+  Avoid manufacturing a fixed alternating pattern of short and long sentences.
+- Use prose for one continuous argument and lists for meaningful peers or steps.
+  Keep academic section titles and useful comparisons. Avoid forcing three
+  items, numbered arguments, or an introduction/body/summary mold.
+- Keep one explanation of a concept. Merge repeated wording only when distinct
+  qualifications and evidence survive. Preserve modality when moving a sentence.
+- Use a colon for a definition, example, or list. Split unnecessary parenthetical
+  diversions rather than adding new dashes or replacing every dash with brackets.
+- Remove decorative emojis, excessive bold, and emphasis quotation marks.
+  Keep semantic symbols, direct-quotation punctuation, and formatting needed
+  to scan a procedure, warning, or comparison.
+- Remove commas immediately after a Korean connective ending when the comma
+  has no role in parsing. Do not add them as a rhythm device.
 
-## 5. 대화형 AI 흔적
+## Chatbot traces
 
-- "물론입니다", "좋은 질문입니다", "도움이 되었기를 바랍니다", "언제든 말씀해 주세요"처럼 본문과 무관한 응대 문구는 뺀다.
-- 독자를 치켜세우거나 근거 없이 동의하는 문장을 뺀다.
-- "정보가 제한적이지만", "앞으로가 기대된다" 같은 빈 면책과 결론은 구체적인 사실이 없으면 뺀다.
-- "다음과 같습니다", "살펴보겠습니다", "정리해 보겠습니다" 뒤에 곧바로 본문이 이어지면 예고를 생략한다.
+- Remove empty praise and agreement such as `좋은 질문입니다`, `물론입니다`,
+  and `정확한 지적입니다`. Preserve substantive agreement and disagreement.
+- Remove unrelated closings such as `도움이 되었기를 바랍니다` and `언제든
+  말씀해 주세요`. Keep a specific question or next action supported by the draft.
+- Start with the actual existing answer when an empty preamble hides it.
+  Preserve source admissions of missing evidence or unverified information.
 
-## 6. 마지막 판정
+## Boundary examples
 
-각 수정은 다음 질문을 통과해야 한다.
+These examples demonstrate the acceptance gates, not exact required wording.
 
-1. 원문의 사실, 주장, 인과, 서법, 고유명사, 수치, 인용을 그대로 보존했는가.
-2. 이 문장이 이 글에만 해당하는 구체적인 정보를 주는가.
-3. 글쓴이가 원래 드러낸 태도와 리듬을 살렸는가.
-4. AI 티를 없애려다 새 상투구나 의견을 넣지 않았는가.
-5. 같은 뜻을 더 평범하고 정확한 한국어로 쓸 수 있는가.
+| Draft | Acceptable edit or decision |
+| --- | --- |
+| `결과에 대해 검토를 진행했습니다.` | `결과를 검토했습니다.` |
+| `설정이 변경되어졌습니다.` | `설정이 변경됐습니다.` Actor remains unknown. |
+| `원인은 인증서일 수 있습니다.` | Preserve the possibility. Do not write `원인은 인증서입니다.` |
+| `백업하는 것이 좋습니다.` | `백업을 권장합니다.` Keep recommendation, not obligation. |
+| `배포는 조만간 끝날 것 같습니다.` | Keep the estimated timing and uncertainty. Report the missing date if relevant. |
+| `법에 따라 처리해야 합니다.` | Retain the governing relation and obligation. |
+| `"결과가 보여집니다"라고 말했다.` | Preserve the direct quotation verbatim. |
 
-하나라도 확신할 수 없으면 해당 수정을 되돌린다.
+If an edit fails preservation, revert that edit. A visible style exception is
+preferable to a fluent sentence with a different claim.
