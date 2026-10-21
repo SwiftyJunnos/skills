@@ -1,0 +1,4 @@
+interface:
+  display_name: "테크 블로그"
+  short_description: "배경·개념·활용·회고로 풀어 쓰고 수치와 구조를 시각화하는 기술 글"
+  default_prompt: "$tech-blog 현재 주제와 근거 자료로 배경, 개념, 활용, 회고가 이어지는 테크 블로그를 작성하고 수치와 구조를 시각화해주세요."

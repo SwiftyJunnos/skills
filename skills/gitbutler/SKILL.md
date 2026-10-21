@@ -1,13 +1,13 @@
 ---
 name: but
 version: 0.22.3
-description: "Commit, push, branch, and manage version control with GitButler. Use for commits, selective dirty-file or hunk commits, branches, diffs, PRs, history edits, squashes, amends, undo, merge, apply, and unapply. For selected dirty files or hunks, inspect with `but diff`; use compact `but status` for commit order, branch/stack placement, or conflict overview; use `but status -fv` when file/hunk IDs or per-commit file details matter. Replaces git write commands."
+description: "Command recipes for GitButler (`but`). Use when the user requests GitButler or the agent chooses it for a workspace. Git and GitHub CLI are also permitted; this skill does not require replacing them with GitButler."
 author: GitButler Team
 ---
 
 # GitButler CLI Skill
 
-Use GitButler CLI (`but`) as the default version-control interface.
+GitButler CLI (`but`) is an optional version-control interface. Choose `git`, `gh`, or `but` for the task without requiring separate approval. The recipes below apply when using GitButler.
 
 ## Start Here
 
@@ -53,7 +53,7 @@ The first token on each `but diff` / `but status` line is that line's ID. When a
 
 ## Non-Negotiable Rules
 
-1. Use `but` for all write operations. Never run `git add`, `git commit`, `git push`, `git checkout`, `git merge`, `git rebase`, `git stash`, or `git cherry-pick`. If the user says a `git` write command, translate it to `but` and run that. Exception: a worktree-local Git commit when `but commit` reports that linked worktrees are unsupported. Never run `but setup` from a linked worktree.
+1. Git and GitHub CLI write commands are permitted. When operating on GitButler-managed branches, preserve its workspace and stack metadata using the appropriate workflow. Never run `but setup` from a linked worktree.
 2. Mutation commands print their result without appending workspace status. Add `--status-after` only when the next step needs resulting workspace IDs or details; otherwise trust the mutation result and do not run a verification status/diff.
 3. Branches marked `(merged upstream)` have landed; run `but pull` to remove them, or start new work on another branch. `push` and mutations (`commit`, `amend`, `squash`, `uncommit`, `reword`, `move`) refuse landed branches and commits, `absorb` skips them with a notice, and `commit` skips them when picking a default target.
 4. In non-interactive CLI workflows, do not narrate progress between routine commands. Execute the needed `but` commands and give a concise final summary.
@@ -162,7 +162,7 @@ If that recovery command fails, do NOT try `uncommit`, `squash`, or `undo` as a 
 
 ### Resolve conflicted commits (after pull, move, or reorder)
 
-**NEVER use `git add`, `git commit`, `git checkout --theirs/--ours`, or any git write command during resolution.** Only `but resolve` commands plus direct file edits.
+For GitButler-managed conflicted commits, use `but resolve` commands plus direct file edits to preserve GitButler metadata. For standard Git conflicts, use the standard Git resolution workflow.
 
 Conflicts do not interrupt operations in GitButler: a rebase always completes, and commits that conflicted are marked `{conflicted}` in `but status`. Find them from the warning that history-editing commands (`move`, `discard`, …) print, from the `but pull` summary, or from `but status`. Resolve them one conflict at a time, without entering any mode. Work through one branch at a time, oldest commit first — the loop is:
 
@@ -205,7 +205,7 @@ A wrong resolution is reverted with `but undo`.
 
 ## Notes
 
-- Read-only git inspection (`git log`, `git blame`, `git show --stat`) is allowed.
+- Git inspection and write operations, and GitHub CLI PR operations, are allowed; choose the workflow appropriate to the workspace.
 - If `but` prints an `AGENT ACTION REQUIRED` skill warning, run the suggested command once, then reload/use the GitButler skill. If it repeats, report it instead of retrying.
 - For command syntax and flags: `references/reference.md`
 - For workspace model: `references/concepts.md`
