@@ -65,22 +65,22 @@
       "updatedAt": "2026-08-21T04:26:29.834Z"
     },
     "codebase-design": {
-      "source": "SwiftyJunnos/skills",
+      "source": "mattpocock/skills",
       "sourceType": "github",
-      "sourceUrl": "https://github.com/SwiftyJunnos/skills.git",
-      "skillPath": "skills/codebase-design/SKILL.md",
+      "sourceUrl": "https://github.com/mattpocock/skills.git",
+      "skillPath": "skills/engineering/codebase-design/SKILL.md",
       "skillFolderHash": "07ba1cd60efc12d0d3a083005c1d9651cf15e39a",
       "installedAt": "2026-08-21T04:26:29.836Z",
-      "updatedAt": "2026-10-17T05:55:21.522Z"
+      "updatedAt": "2026-10-21T01:57:10.000Z"
     },
     "diagnosing-bugs": {
-      "source": "SwiftyJunnos/skills",
+      "source": "mattpocock/skills",
       "sourceType": "github",
-      "sourceUrl": "https://github.com/SwiftyJunnos/skills.git",
-      "skillPath": "skills/diagnosing-bugs/SKILL.md",
-      "skillFolderHash": "de4236cf34757c4e9ea7afe78d46c023213ff254",
+      "sourceUrl": "https://github.com/mattpocock/skills.git",
+      "skillPath": "skills/engineering/diagnosing-bugs/SKILL.md",
+      "skillFolderHash": "5fdd6cc53385395441910b026c72d71768e993d4",
       "installedAt": "2026-08-21T04:26:29.836Z",
-      "updatedAt": "2026-10-17T05:55:24.019Z"
+      "updatedAt": "2026-10-21T01:57:10.000Z"
     },
     "docker-expert": {
       "source": "SwiftyJunnos/skills",
@@ -92,13 +92,13 @@
       "updatedAt": "2026-08-21T04:26:29.837Z"
     },
     "domain-modeling": {
-      "source": "SwiftyJunnos/skills",
+      "source": "mattpocock/skills",
       "sourceType": "github",
-      "sourceUrl": "https://github.com/SwiftyJunnos/skills.git",
-      "skillPath": "skills/domain-modeling/SKILL.md",
+      "sourceUrl": "https://github.com/mattpocock/skills.git",
+      "skillPath": "skills/engineering/domain-modeling/SKILL.md",
       "skillFolderHash": "ea30ee454ba264543dbe40737973b1a5afb9f0e6",
       "installedAt": "2026-08-21T04:26:29.838Z",
-      "updatedAt": "2026-10-17T05:55:25.977Z"
+      "updatedAt": "2026-10-21T01:57:10.000Z"
     },
     "explain-diff": {
       "source": "SwiftyJunnos/skills",
@@ -110,31 +110,31 @@
       "updatedAt": "2026-10-01T02:48:33.577Z"
     },
     "grill-me": {
-      "source": "SwiftyJunnos/skills",
+      "source": "mattpocock/skills",
       "sourceType": "github",
-      "sourceUrl": "https://github.com/SwiftyJunnos/skills.git",
-      "skillPath": "skills/grill-me/SKILL.md",
+      "sourceUrl": "https://github.com/mattpocock/skills.git",
+      "skillPath": "skills/productivity/grill-me/SKILL.md",
       "skillFolderHash": "3df14e2d3a89459bf300614be9247e3ce74798f8",
       "installedAt": "2026-08-21T04:26:29.839Z",
-      "updatedAt": "2026-08-21T04:26:29.839Z"
+      "updatedAt": "2026-10-21T01:57:10.000Z"
     },
     "grill-with-docs": {
-      "source": "SwiftyJunnos/skills",
+      "source": "mattpocock/skills",
       "sourceType": "github",
-      "sourceUrl": "https://github.com/SwiftyJunnos/skills.git",
-      "skillPath": "skills/grill-with-docs/SKILL.md",
+      "sourceUrl": "https://github.com/mattpocock/skills.git",
+      "skillPath": "skills/engineering/grill-with-docs/SKILL.md",
       "skillFolderHash": "eedaf2562c83155115e9c649fa3ecaac2e10e81d",
       "installedAt": "2026-08-21T04:26:29.840Z",
-      "updatedAt": "2026-08-21T04:26:29.840Z"
+      "updatedAt": "2026-10-21T01:57:10.000Z"
     },
     "grilling": {
-      "source": "SwiftyJunnos/skills",
+      "source": "mattpocock/skills",
       "sourceType": "github",
-      "sourceUrl": "https://github.com/SwiftyJunnos/skills.git",
-      "skillPath": "skills/grilling/SKILL.md",
-      "skillFolderHash": "f0732035b8b1b60ae39454e4191caef32fa91903",
+      "sourceUrl": "https://github.com/mattpocock/skills.git",
+      "skillPath": "skills/productivity/grilling/SKILL.md",
+      "skillFolderHash": "28aceb4c9567b985cb47f7db88cf23c9f33af8b8",
       "installedAt": "2026-08-21T04:26:29.841Z",
-      "updatedAt": "2026-08-21T04:26:29.841Z"
+      "updatedAt": "2026-10-21T01:57:10.000Z"
     },
     "how": {
       "source": "SwiftyJunnos/skills",
@@ -155,13 +155,13 @@
       "updatedAt": "2026-10-01T02:48:35.684Z"
     },
     "teach": {
-      "source": "SwiftyJunnos/skills",
+      "source": "mattpocock/skills",
       "sourceType": "github",
-      "sourceUrl": "https://github.com/SwiftyJunnos/skills.git",
-      "skillPath": "skills/teach/SKILL.md",
-      "skillFolderHash": "2ab11f2f51f3c29771edb5d4258d807a49462491",
+      "sourceUrl": "https://github.com/mattpocock/skills.git",
+      "skillPath": "skills/productivity/teach/SKILL.md",
+      "skillFolderHash": "3fd617b610e59acbb99644de1ef37e394ff53cd1",
       "installedAt": "2026-08-21T04:26:29.843Z",
-      "updatedAt": "2026-08-21T04:26:29.843Z"
+      "updatedAt": "2026-10-21T01:57:10.000Z"
     },
     "unslop": {
       "source": "SwiftyJunnos/skills",
@@ -191,22 +191,22 @@
       "updatedAt": "2026-08-21T04:26:29.845Z"
     },
     "wizard": {
-      "source": "SwiftyJunnos/skills",
+      "source": "mattpocock/skills",
       "sourceType": "github",
-      "sourceUrl": "https://github.com/SwiftyJunnos/skills.git",
-      "skillPath": "skills/wizard/SKILL.md",
-      "skillFolderHash": "0a163daf092c6f361158ca9627e81f2cb5230574",
+      "sourceUrl": "https://github.com/mattpocock/skills.git",
+      "skillPath": "skills/engineering/wizard/SKILL.md",
+      "skillFolderHash": "e396d3ba97c723a78ffd350fb14a3c409137b306",
       "installedAt": "2026-08-21T04:26:29.845Z",
-      "updatedAt": "2026-08-21T04:26:29.845Z"
+      "updatedAt": "2026-10-21T01:57:10.000Z"
     },
     "writing-for-agents": {
-      "source": "SwiftyJunnos/skills",
+      "source": "mattpocock/skills",
       "sourceType": "github",
-      "sourceUrl": "https://github.com/SwiftyJunnos/skills.git",
-      "skillPath": "skills/writing-for-agents/SKILL.md",
+      "sourceUrl": "https://github.com/mattpocock/skills.git",
+      "skillPath": "skills/productivity/writing-for-agents/SKILL.md",
       "skillFolderHash": "ad2925850efb8973a72d2e666f7a975f9a2d4a9b",
       "installedAt": "2026-08-21T04:26:29.846Z",
-      "updatedAt": "2026-08-21T04:26:29.846Z"
+      "updatedAt": "2026-10-21T01:57:10.000Z"
     },
     "humanize": {
       "source": "epoko77-ai/im-not-ai",
