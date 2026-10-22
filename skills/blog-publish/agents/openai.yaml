@@ -1,0 +1,4 @@
+interface:
+  display_name: "블로그 작성·발행"
+  short_description: "등록한 블로그와 작성 계정을 기억하고 초안부터 발행까지 진행합니다"
+  default_prompt: "$blog-publish 등록된 블로그에 이번 작업을 글로 정리해 발행해 주세요."
