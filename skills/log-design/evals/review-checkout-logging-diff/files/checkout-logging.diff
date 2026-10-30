@@ -1,0 +1,66 @@
+diff --git a/server/routes/checkout.ts b/server/routes/checkout.ts
+index 3f1a2b0..8c4d9e1 100644
+--- a/server/routes/checkout.ts
++++ b/server/routes/checkout.ts
+@@ -1,9 +1,11 @@
+ import { Router } from "express";
+ import { chargeCard } from "../payments/gateway";
+ import { findOrder, markPaid } from "../orders/repo";
++import { logger } from "../lib/logger";
++import { analytics } from "../lib/analytics";
++import { pagerduty } from "../lib/pagerduty";
+
+ export const checkout = Router();
+
+ checkout.post("/orders/:orderId/pay", async (req, res) => {
++  logger.info(`checkout request ${JSON.stringify(req.body)}`);
+   const order = await findOrder(req.params.orderId);
+   if (!order) {
++    logger.error(`order not found: ${req.params.orderId}`);
++    pagerduty.trigger("checkout-error", { orderId: req.params.orderId });
+     return res.status(404).json({ error: "ORDER_NOT_FOUND" });
+   }
+
+-  const result = await chargeCard(order, req.body.card);
+-  if (!result.ok) {
+-    return res.status(402).json({ error: result.code });
+-  }
++  const startedAt = Date.now();
++  let result;
++  for (let i = 0; i < 3; i++) {
++    result = await chargeCard(order, req.body.card);
++    if (result.ok) break;
++    logger.error("Payment failed", { error: result.raw, userEmail: req.body.email });
++  }
++  if (!result.ok) {
++    return res.status(402).json({ error: result.code });
++  }
+
+   await markPaid(order.id, result.transactionId);
++  analytics.track(`user_${order.userId}_paid`, {
++    amount: String(order.total),
++    duration: String(Date.now() - startedAt),
++    paymentMethod: req.body.card.brand,
++  });
+   res.json({ ok: true });
+ });
+diff --git a/web/src/checkout/PayButton.tsx b/web/src/checkout/PayButton.tsx
+index 91b7c2a..d02e5f4 100644
+--- a/web/src/checkout/PayButton.tsx
++++ b/web/src/checkout/PayButton.tsx
+@@ -8,10 +8,16 @@ export function PayButton({ order }: { order: Order }) {
+   const [pending, setPending] = useState(false);
+
+   async function onClick() {
+     setPending(true);
++    analytics.track("Order Completed", {
++      order_id: order.id,
++      total: order.total,
++      coupon: order.couponCode ?? null,
++    });
+     try {
+       await api.pay(order.id, cardForm.values());
+     } finally {
+       setPending(false);
+     }
+   }

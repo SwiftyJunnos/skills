@@ -1,0 +1,9 @@
+schema_version: "1.1"
+name: review-checkout-logging-diff
+expected_outcome: |
+  diff에서 로그·이벤트 문제를 원칙 번호와 줄 근거로 짚는다. 요청 본문 전체 로깅(카드·이메일 노출),
+  사용자 ID가 들어간 이벤트 이름, 서버 확정 전 클라이언트 클릭에서 보내는 주문 완료 이벤트,
+  재시도마다 ERROR로 남기고 최종 실패를 구분하지 않는 루프, 단위 없는 문자열 duration,
+  404를 ERROR로 남기고 알림을 보내는 코드를 찾아낸다.
+context:
+  scaffold_script: place-files.sh
