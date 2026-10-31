@@ -69,9 +69,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/mattpocock/skills.git",
       "skillPath": "skills/engineering/codebase-design/SKILL.md",
-      "skillFolderHash": "07ba1cd60efc12d0d3a083005c1d9651cf15e39a",
+      "skillFolderHash": "4cbe1c131e1ea54109cb1e4e5f3c505810db6606",
       "installedAt": "2026-08-21T04:26:29.836Z",
-      "updatedAt": "2026-10-21T01:57:10.000Z"
+      "updatedAt": "2026-10-31T15:58:28.628Z"
     },
     "diagnosing-bugs": {
       "source": "mattpocock/skills",
@@ -132,9 +132,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/mattpocock/skills.git",
       "skillPath": "skills/productivity/grilling/SKILL.md",
-      "skillFolderHash": "28aceb4c9567b985cb47f7db88cf23c9f33af8b8",
+      "skillFolderHash": "f551b6e0d219fdda0b6abf277f8f915b3127d1e9",
       "installedAt": "2026-08-21T04:26:29.841Z",
-      "updatedAt": "2026-10-21T01:57:10.000Z"
+      "updatedAt": "2026-10-31T15:58:29.971Z"
     },
     "how": {
       "source": "SwiftyJunnos/skills",
@@ -294,9 +294,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/callstack/agent-device.git",
       "skillPath": "skills/agent-device/SKILL.md",
-      "skillFolderHash": "0d0064c0b798cc53ac75d812909bfbaae773f424",
+      "skillFolderHash": "f895b564a36ba6d574656136889b6a985e2981a5",
       "installedAt": "2026-09-03T06:45:26.293Z",
-      "updatedAt": "2026-10-01T02:48:52.724Z"
+      "updatedAt": "2026-10-31T15:58:34.342Z"
     },
     "herdr": {
       "source": "herdrdev/herdr",
@@ -315,6 +315,15 @@
       "skillFolderHash": "118c0642360ab53de52b3f8dd044102567dbcaa9",
       "installedAt": "2026-09-11T07:19:56.126Z",
       "updatedAt": "2026-10-17T05:55:35.692Z"
+    },
+    "agent-desktop": {
+      "source": "vercel-labs/agent-desktop",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/agent-desktop.git",
+      "skillPath": "skills/agent-desktop/SKILL.md",
+      "skillFolderHash": "106d618c482e1c851936db53dbff4a6c958ffb34",
+      "installedAt": "2026-10-31T15:58:18.700Z",
+      "updatedAt": "2026-10-31T15:58:18.700Z"
     }
   },
   "dismissed": {
@@ -326,11 +335,13 @@
     "codex",
     "cursor",
     "droid",
+    "fx",
     "gemini-cli",
     "github-copilot",
     "kilo",
     "kimi-code-cli",
     "opencode",
+    "pi",
     "warp",
     "zed",
     "grok"
