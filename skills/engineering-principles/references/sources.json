@@ -1,0 +1,306 @@
+{
+  "schemaVersion": 1,
+  "repository": "cursor/plugins",
+  "revision": "2776ddd2355d6d6c8747d3964600f28daf62f049",
+  "importedAt": "2026-11-06T14:32:45.418614+00:00",
+  "policy": "Reviewed local adaptation; no automatic upstream updates.",
+  "transformation": "Rewrite relative Markdown links to the bundled reference layout; preserve all other source text.",
+  "files": [
+    {
+      "sourcePath": "pstack/skills/principle-attack-the-premise/SKILL.md",
+      "sourceUrl": "https://github.com/cursor/plugins/blob/2776ddd2355d6d6c8747d3964600f28daf62f049/pstack/skills/principle-attack-the-premise/SKILL.md",
+      "sourceBlobSha": "e9a6d499606992edd9963b80f8f8f57feaccb221",
+      "sourceSha256": "6a932884daad4aa189e9b5d1665226bbc75621d4d2a398fd4003bebd382f4599",
+      "localPath": "references/principles/attack-the-premise.md",
+      "localSha256": "43ef94dc949c653b39952390da77e31c3cc490432be235636c1542d131fac7ec",
+      "linkRewrites": [
+        {
+          "from": "../principle-build-the-lever/SKILL.md",
+          "to": "build-the-lever.md"
+        },
+        {
+          "from": "../principle-fix-root-causes/SKILL.md",
+          "to": "fix-root-causes.md"
+        },
+        {
+          "from": "../principle-laziness-protocol/SKILL.md",
+          "to": "laziness-protocol.md"
+        },
+        {
+          "from": "../principle-redesign-from-first-principles/SKILL.md",
+          "to": "redesign-from-first-principles.md"
+        }
+      ]
+    },
+    {
+      "sourcePath": "pstack/skills/principle-boundary-discipline/SKILL.md",
+      "sourceUrl": "https://github.com/cursor/plugins/blob/2776ddd2355d6d6c8747d3964600f28daf62f049/pstack/skills/principle-boundary-discipline/SKILL.md",
+      "sourceBlobSha": "dfe9a6fb0e5acd6ae43a41437ee0951adfe839cb",
+      "sourceSha256": "62ac2862c2caa22dd14531f51c9c6bb445ceb198ca98a687e25b4d47c1f10a28",
+      "localPath": "references/principles/boundary-discipline.md",
+      "localSha256": "62ac2862c2caa22dd14531f51c9c6bb445ceb198ca98a687e25b4d47c1f10a28",
+      "linkRewrites": []
+    },
+    {
+      "sourcePath": "pstack/skills/principle-build-the-lever/SKILL.md",
+      "sourceUrl": "https://github.com/cursor/plugins/blob/2776ddd2355d6d6c8747d3964600f28daf62f049/pstack/skills/principle-build-the-lever/SKILL.md",
+      "sourceBlobSha": "cbf003850489d95fea78e64198fd972c35b1aad3",
+      "sourceSha256": "3434b0ad0c640c6f1d7960be7a8986c3bcdc14e26060360dec29903df60074ff",
+      "localPath": "references/principles/build-the-lever.md",
+      "localSha256": "1484f8037bcca50662d4491f281e5863b3f2cdad27318048077ee909eeeb4b46",
+      "linkRewrites": [
+        {
+          "from": "../principle-laziness-protocol/SKILL.md",
+          "to": "laziness-protocol.md"
+        },
+        {
+          "from": "../principle-encode-lessons-in-structure/SKILL.md",
+          "to": "encode-lessons-in-structure.md"
+        },
+        {
+          "from": "../principle-prove-it-works/SKILL.md",
+          "to": "prove-it-works.md"
+        }
+      ]
+    },
+    {
+      "sourcePath": "pstack/skills/principle-encode-lessons-in-structure/SKILL.md",
+      "sourceUrl": "https://github.com/cursor/plugins/blob/2776ddd2355d6d6c8747d3964600f28daf62f049/pstack/skills/principle-encode-lessons-in-structure/SKILL.md",
+      "sourceBlobSha": "4a96f77fe70e36cb030f9c5efa142f66877bf58a",
+      "sourceSha256": "228963799189f481827d6f28065f278bc2008ffa37030b1234cbd5814d36b9e9",
+      "localPath": "references/principles/encode-lessons-in-structure.md",
+      "localSha256": "228963799189f481827d6f28065f278bc2008ffa37030b1234cbd5814d36b9e9",
+      "linkRewrites": []
+    },
+    {
+      "sourcePath": "pstack/skills/principle-exhaust-the-design-space/SKILL.md",
+      "sourceUrl": "https://github.com/cursor/plugins/blob/2776ddd2355d6d6c8747d3964600f28daf62f049/pstack/skills/principle-exhaust-the-design-space/SKILL.md",
+      "sourceBlobSha": "395a0839126bb231430a9c9da02ebab5422557d5",
+      "sourceSha256": "2de83d99f93f60ec6313455b0bc9aa9f0bfb93dd59f414f403691322db00d4db",
+      "localPath": "references/principles/exhaust-the-design-space.md",
+      "localSha256": "2de83d99f93f60ec6313455b0bc9aa9f0bfb93dd59f414f403691322db00d4db",
+      "linkRewrites": []
+    },
+    {
+      "sourcePath": "pstack/skills/principle-experience-first/SKILL.md",
+      "sourceUrl": "https://github.com/cursor/plugins/blob/2776ddd2355d6d6c8747d3964600f28daf62f049/pstack/skills/principle-experience-first/SKILL.md",
+      "sourceBlobSha": "5ea51741302cf3af4cc0b90ec70815bd3208dbf2",
+      "sourceSha256": "58903529d733b1c1a7c9ccf127d45ef3c7d0d9f0b81164a4dc6b80efe6f2912b",
+      "localPath": "references/principles/experience-first.md",
+      "localSha256": "58903529d733b1c1a7c9ccf127d45ef3c7d0d9f0b81164a4dc6b80efe6f2912b",
+      "linkRewrites": []
+    },
+    {
+      "sourcePath": "pstack/skills/principle-explain-the-number/SKILL.md",
+      "sourceUrl": "https://github.com/cursor/plugins/blob/2776ddd2355d6d6c8747d3964600f28daf62f049/pstack/skills/principle-explain-the-number/SKILL.md",
+      "sourceBlobSha": "3948ad34092437918f366e2cbb270e9ae31977fb",
+      "sourceSha256": "3c84fbf9a7d9842abcfcd134010782b32092ac3d3fb4aaf9ed5732dca83aa58c",
+      "localPath": "references/principles/explain-the-number.md",
+      "localSha256": "b3290a004012f7c90a9f6ffa8a5a05cc131bb39e397d0d1fbd13f38cebca869e",
+      "linkRewrites": [
+        {
+          "from": "../benchmark-checklist/SKILL.md",
+          "to": "../benchmark-checklist.md"
+        },
+        {
+          "from": "../principle-prove-it-works/SKILL.md",
+          "to": "prove-it-works.md"
+        }
+      ]
+    },
+    {
+      "sourcePath": "pstack/skills/principle-fix-root-causes/SKILL.md",
+      "sourceUrl": "https://github.com/cursor/plugins/blob/2776ddd2355d6d6c8747d3964600f28daf62f049/pstack/skills/principle-fix-root-causes/SKILL.md",
+      "sourceBlobSha": "14fc189fa1ec3fb1614b0a3c75557f92943d8f13",
+      "sourceSha256": "8df3c8c3fe57eb0055a5c8efab8ab144557fdf301da70b1cdc77a3a3ef3f3052",
+      "localPath": "references/principles/fix-root-causes.md",
+      "localSha256": "8df3c8c3fe57eb0055a5c8efab8ab144557fdf301da70b1cdc77a3a3ef3f3052",
+      "linkRewrites": []
+    },
+    {
+      "sourcePath": "pstack/skills/principle-foundational-thinking/SKILL.md",
+      "sourceUrl": "https://github.com/cursor/plugins/blob/2776ddd2355d6d6c8747d3964600f28daf62f049/pstack/skills/principle-foundational-thinking/SKILL.md",
+      "sourceBlobSha": "19cc6c0eaa6fcbc2863fb73d1d25ca196c6a46e0",
+      "sourceSha256": "864b827e8199d946ce58beca0f89c4ed4099ed6e426fb698a3aaa45de2a9eea2",
+      "localPath": "references/principles/foundational-thinking.md",
+      "localSha256": "864b827e8199d946ce58beca0f89c4ed4099ed6e426fb698a3aaa45de2a9eea2",
+      "linkRewrites": []
+    },
+    {
+      "sourcePath": "pstack/skills/principle-guard-the-context-window/SKILL.md",
+      "sourceUrl": "https://github.com/cursor/plugins/blob/2776ddd2355d6d6c8747d3964600f28daf62f049/pstack/skills/principle-guard-the-context-window/SKILL.md",
+      "sourceBlobSha": "0a1d3cfcf4539fe048887174000fecbf2fa40e81",
+      "sourceSha256": "af0b9dd70b43628ce4a59a4d332e9d9ad055084e460f430e7a757495c627e81a",
+      "localPath": "references/principles/guard-the-context-window.md",
+      "localSha256": "af0b9dd70b43628ce4a59a4d332e9d9ad055084e460f430e7a757495c627e81a",
+      "linkRewrites": []
+    },
+    {
+      "sourcePath": "pstack/skills/principle-laziness-protocol/SKILL.md",
+      "sourceUrl": "https://github.com/cursor/plugins/blob/2776ddd2355d6d6c8747d3964600f28daf62f049/pstack/skills/principle-laziness-protocol/SKILL.md",
+      "sourceBlobSha": "016c3c7c8dfffd995c1a02135a62248e6625879b",
+      "sourceSha256": "1be6e7a435f26a75a76eb848b9c3d611b9977d0f5822361753244da25ca3ca45",
+      "localPath": "references/principles/laziness-protocol.md",
+      "localSha256": "1be6e7a435f26a75a76eb848b9c3d611b9977d0f5822361753244da25ca3ca45",
+      "linkRewrites": []
+    },
+    {
+      "sourcePath": "pstack/skills/principle-make-operations-idempotent/SKILL.md",
+      "sourceUrl": "https://github.com/cursor/plugins/blob/2776ddd2355d6d6c8747d3964600f28daf62f049/pstack/skills/principle-make-operations-idempotent/SKILL.md",
+      "sourceBlobSha": "c93f323d694a4d310515ea27165a093d399bc55e",
+      "sourceSha256": "7aa9327cf1f1aa057e95d47a0a78bd88a8f9d556b608866fee939d455a53a019",
+      "localPath": "references/principles/make-operations-idempotent.md",
+      "localSha256": "7aa9327cf1f1aa057e95d47a0a78bd88a8f9d556b608866fee939d455a53a019",
+      "linkRewrites": []
+    },
+    {
+      "sourcePath": "pstack/skills/principle-migrate-callers-then-delete-legacy-apis/SKILL.md",
+      "sourceUrl": "https://github.com/cursor/plugins/blob/2776ddd2355d6d6c8747d3964600f28daf62f049/pstack/skills/principle-migrate-callers-then-delete-legacy-apis/SKILL.md",
+      "sourceBlobSha": "57ddd7b27d06ba4ee9e2d3811880476a18b88df6",
+      "sourceSha256": "580ad9bb1a0994ecb924321ba49efc38a2f85c64e22c76fb133f57a78272a2e6",
+      "localPath": "references/principles/migrate-callers-then-delete-legacy-apis.md",
+      "localSha256": "580ad9bb1a0994ecb924321ba49efc38a2f85c64e22c76fb133f57a78272a2e6",
+      "linkRewrites": []
+    },
+    {
+      "sourcePath": "pstack/skills/principle-minimize-reader-load/SKILL.md",
+      "sourceUrl": "https://github.com/cursor/plugins/blob/2776ddd2355d6d6c8747d3964600f28daf62f049/pstack/skills/principle-minimize-reader-load/SKILL.md",
+      "sourceBlobSha": "628999088c5d05c1c546b3a3ca89da553cd3f3b2",
+      "sourceSha256": "1ea2b7fef2391cae5844c4efdbd59031f775e8a52d06b7495d707229a200dcca",
+      "localPath": "references/principles/minimize-reader-load.md",
+      "localSha256": "b7873443c7be3189c91547f6275e2282208e07eb71fcdc165b8169b6f34295a3",
+      "linkRewrites": [
+        {
+          "from": "../principle-guard-the-context-window/SKILL.md",
+          "to": "guard-the-context-window.md"
+        }
+      ]
+    },
+    {
+      "sourcePath": "pstack/skills/principle-model-the-domain/SKILL.md",
+      "sourceUrl": "https://github.com/cursor/plugins/blob/2776ddd2355d6d6c8747d3964600f28daf62f049/pstack/skills/principle-model-the-domain/SKILL.md",
+      "sourceBlobSha": "09b7c739955facf03f08f66e1e329745d2f8880e",
+      "sourceSha256": "52c0d85e0c3827c41c18299b642657d7b47eaf77b7b31609e42e0df42b84c75f",
+      "localPath": "references/principles/model-the-domain.md",
+      "localSha256": "52c0d85e0c3827c41c18299b642657d7b47eaf77b7b31609e42e0df42b84c75f",
+      "linkRewrites": []
+    },
+    {
+      "sourcePath": "pstack/skills/principle-never-block-on-the-human/SKILL.md",
+      "sourceUrl": "https://github.com/cursor/plugins/blob/2776ddd2355d6d6c8747d3964600f28daf62f049/pstack/skills/principle-never-block-on-the-human/SKILL.md",
+      "sourceBlobSha": "4f59bdc69f79d536b30b0014a563ed3be05b8b62",
+      "sourceSha256": "05030a7a083c337676f793881b4e93cd218e8f1dd676529f56e6ac1d3efb8d1f",
+      "localPath": "references/principles/never-block-on-the-human.md",
+      "localSha256": "05030a7a083c337676f793881b4e93cd218e8f1dd676529f56e6ac1d3efb8d1f",
+      "linkRewrites": []
+    },
+    {
+      "sourcePath": "pstack/skills/principle-outcome-oriented-execution/SKILL.md",
+      "sourceUrl": "https://github.com/cursor/plugins/blob/2776ddd2355d6d6c8747d3964600f28daf62f049/pstack/skills/principle-outcome-oriented-execution/SKILL.md",
+      "sourceBlobSha": "c49be0bc74783f0dee013101365ae09b2abb48a2",
+      "sourceSha256": "10eb91633aa570355ba4bb37088fcade2b22e498df7a58edc749e65bc5a78e2d",
+      "localPath": "references/principles/outcome-oriented-execution.md",
+      "localSha256": "10eb91633aa570355ba4bb37088fcade2b22e498df7a58edc749e65bc5a78e2d",
+      "linkRewrites": []
+    },
+    {
+      "sourcePath": "pstack/skills/principle-prove-it-works/SKILL.md",
+      "sourceUrl": "https://github.com/cursor/plugins/blob/2776ddd2355d6d6c8747d3964600f28daf62f049/pstack/skills/principle-prove-it-works/SKILL.md",
+      "sourceBlobSha": "5dc14a3b06f9d579e5c17cd8a7242f432ddb3125",
+      "sourceSha256": "ec79a15025bac8d33d62011c54f3b612733fd2a024e623b531b3637aa75070e2",
+      "localPath": "references/principles/prove-it-works.md",
+      "localSha256": "ec79a15025bac8d33d62011c54f3b612733fd2a024e623b531b3637aa75070e2",
+      "linkRewrites": []
+    },
+    {
+      "sourcePath": "pstack/skills/principle-redesign-from-first-principles/SKILL.md",
+      "sourceUrl": "https://github.com/cursor/plugins/blob/2776ddd2355d6d6c8747d3964600f28daf62f049/pstack/skills/principle-redesign-from-first-principles/SKILL.md",
+      "sourceBlobSha": "5ca5246cbb0fa08884ce17b0d22c117ae1ad67b8",
+      "sourceSha256": "170e0a658783e43fee8ec5a8c2422a4abb8f69cef621dd1819a95910b8207034",
+      "localPath": "references/principles/redesign-from-first-principles.md",
+      "localSha256": "170e0a658783e43fee8ec5a8c2422a4abb8f69cef621dd1819a95910b8207034",
+      "linkRewrites": []
+    },
+    {
+      "sourcePath": "pstack/skills/principle-separate-before-serializing-shared-state/SKILL.md",
+      "sourceUrl": "https://github.com/cursor/plugins/blob/2776ddd2355d6d6c8747d3964600f28daf62f049/pstack/skills/principle-separate-before-serializing-shared-state/SKILL.md",
+      "sourceBlobSha": "ff93b4a2032c08e2232992a9a24f2891ee14e58f",
+      "sourceSha256": "05294b40448e927c5da1c7b6f5c6b9fed3744637e3833d2d948b9154a9dd00bb",
+      "localPath": "references/principles/separate-before-serializing-shared-state.md",
+      "localSha256": "05294b40448e927c5da1c7b6f5c6b9fed3744637e3833d2d948b9154a9dd00bb",
+      "linkRewrites": []
+    },
+    {
+      "sourcePath": "pstack/skills/principle-sequence-verifiable-units/SKILL.md",
+      "sourceUrl": "https://github.com/cursor/plugins/blob/2776ddd2355d6d6c8747d3964600f28daf62f049/pstack/skills/principle-sequence-verifiable-units/SKILL.md",
+      "sourceBlobSha": "986371260ebccd9a5a6818c9561e88c1d270d0ee",
+      "sourceSha256": "2ccbbacc56ace5afdfb8670cef19d7bd009fb2a0033b9a741cbdf2b6baf72187",
+      "localPath": "references/principles/sequence-verifiable-units.md",
+      "localSha256": "2ccbbacc56ace5afdfb8670cef19d7bd009fb2a0033b9a741cbdf2b6baf72187",
+      "linkRewrites": []
+    },
+    {
+      "sourcePath": "pstack/skills/principle-subtract-before-you-add/SKILL.md",
+      "sourceUrl": "https://github.com/cursor/plugins/blob/2776ddd2355d6d6c8747d3964600f28daf62f049/pstack/skills/principle-subtract-before-you-add/SKILL.md",
+      "sourceBlobSha": "b8740ba6f06922d8e7ef3b23f9fb16e0fc4a876f",
+      "sourceSha256": "8c93bb9d1a7f38e2ef37655d93f0e790fa59903105af3d500cc8a663ebe45f3f",
+      "localPath": "references/principles/subtract-before-you-add.md",
+      "localSha256": "8c93bb9d1a7f38e2ef37655d93f0e790fa59903105af3d500cc8a663ebe45f3f",
+      "linkRewrites": []
+    },
+    {
+      "sourcePath": "pstack/skills/principle-test-behavior-not-implementation/SKILL.md",
+      "sourceUrl": "https://github.com/cursor/plugins/blob/2776ddd2355d6d6c8747d3964600f28daf62f049/pstack/skills/principle-test-behavior-not-implementation/SKILL.md",
+      "sourceBlobSha": "78c9389bfe707d6d56485ade32c59150958228f9",
+      "sourceSha256": "f7223698623b6a26fea49c751e466b38e6691b1f32ce841d3983e7ffbe2b74a6",
+      "localPath": "references/principles/test-behavior-not-implementation.md",
+      "localSha256": "f7223698623b6a26fea49c751e466b38e6691b1f32ce841d3983e7ffbe2b74a6",
+      "linkRewrites": []
+    },
+    {
+      "sourcePath": "pstack/skills/principle-type-system-discipline/SKILL.md",
+      "sourceUrl": "https://github.com/cursor/plugins/blob/2776ddd2355d6d6c8747d3964600f28daf62f049/pstack/skills/principle-type-system-discipline/SKILL.md",
+      "sourceBlobSha": "9fa08b0b17d536ce751fffa90134be8fb03699c7",
+      "sourceSha256": "5cdaf79785e3c12b2592b9469ee8c272143eb86ab7a18d8382197cea5fd30106",
+      "localPath": "references/principles/type-system-discipline.md",
+      "localSha256": "5cdaf79785e3c12b2592b9469ee8c272143eb86ab7a18d8382197cea5fd30106",
+      "linkRewrites": []
+    },
+    {
+      "sourcePath": "pstack/skills/benchmark-checklist/SKILL.md",
+      "sourceUrl": "https://github.com/cursor/plugins/blob/2776ddd2355d6d6c8747d3964600f28daf62f049/pstack/skills/benchmark-checklist/SKILL.md",
+      "sourceBlobSha": "e901d1fdbc9ffce53e94d6514be7d9a22e771a1a",
+      "sourceSha256": "ba109e96c8f6c1c391baccf19e5d11e14370df7b3f2605e1572cd565a6c0fca0",
+      "localPath": "references/benchmark-checklist.md",
+      "localSha256": "ba109e96c8f6c1c391baccf19e5d11e14370df7b3f2605e1572cd565a6c0fca0",
+      "linkRewrites": []
+    },
+    {
+      "sourcePath": "pstack/skills/typescript-best-practices/SKILL.md",
+      "sourceUrl": "https://github.com/cursor/plugins/blob/2776ddd2355d6d6c8747d3964600f28daf62f049/pstack/skills/typescript-best-practices/SKILL.md",
+      "sourceBlobSha": "e1e5aa7c97ed39c425d60d933a96424a3f14539e",
+      "sourceSha256": "ec1dac086d3708e5940d45d250c30a37dd953b4e3cb2ca0692f5851d7a039e27",
+      "localPath": "references/typescript-best-practices.md",
+      "localSha256": "ec1dac086d3708e5940d45d250c30a37dd953b4e3cb2ca0692f5851d7a039e27",
+      "linkRewrites": []
+    },
+    {
+      "sourcePath": "pstack/LICENSE",
+      "sourceUrl": "https://github.com/cursor/plugins/blob/2776ddd2355d6d6c8747d3964600f28daf62f049/pstack/LICENSE",
+      "sourceBlobSha": "6b5400237fdf6545be0b8fae370d6f2fcff8fb25",
+      "sourceSha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+      "localPath": "LICENSE",
+      "localSha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+      "linkRewrites": []
+    },
+    {
+      "sourcePath": "pstack/skills/typescript-best-practices/references/patterns.md",
+      "sourceUrl": "https://github.com/cursor/plugins/blob/2776ddd2355d6d6c8747d3964600f28daf62f049/pstack/skills/typescript-best-practices/references/patterns.md",
+      "sourceBlobSha": "f8dd99b63ecb469a090b8fa0a7e235d3239cb9ec",
+      "sourceSha256": "12e70c9419a8b3f5d6a1ab80e272c1f00a43ac0b3bbf72d68199033570e5de77",
+      "localPath": "references/patterns.md",
+      "localSha256": "12e70c9419a8b3f5d6a1ab80e272c1f00a43ac0b3bbf72d68199033570e5de77",
+      "linkRewrites": []
+    }
+  ]
+}
