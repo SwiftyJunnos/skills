@@ -240,9 +240,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/emilkowalski/skill.git",
       "skillPath": "skills/animate/SKILL.md",
-      "skillFolderHash": "a92e36f28d741aee4ff77d1a001300d7e86e07fe",
+      "skillFolderHash": "fe46ac61092a8cf086dce6a907fc98295a600d3d",
       "installedAt": "2026-08-31T00:52:50.903Z",
-      "updatedAt": "2026-10-01T02:48:37.593Z"
+      "updatedAt": "2026-11-06T14:44:35.550Z"
     },
     "animation-vocabulary": {
       "source": "emilkowalski/skill",
@@ -267,18 +267,18 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/emilkowalski/skill.git",
       "skillPath": "skills/improve-animations/SKILL.md",
-      "skillFolderHash": "cf1f7aabac34c08f2cf833f039fa99af2f415183",
+      "skillFolderHash": "d3ce6f348009d830b89e7a830cc958245aea2ad6",
       "installedAt": "2026-08-31T00:52:50.904Z",
-      "updatedAt": "2026-10-01T02:48:42.351Z"
+      "updatedAt": "2026-11-06T14:44:35.578Z"
     },
     "review-animations": {
       "source": "emilkowalski/skill",
       "sourceType": "github",
       "sourceUrl": "https://github.com/emilkowalski/skill.git",
       "skillPath": "skills/review-animations/SKILL.md",
-      "skillFolderHash": "0e0d3cb3e07ca307fe946ccaf57f6c82eb75124a",
+      "skillFolderHash": "bede4e1924423cea207f67ffe7a742b8d6ad753e",
       "installedAt": "2026-08-31T00:52:50.905Z",
-      "updatedAt": "2026-10-01T02:48:43.973Z"
+      "updatedAt": "2026-11-06T14:44:35.604Z"
     },
     "unslop-kr": {
       "source": "SwiftyJunnos/skills",
@@ -294,9 +294,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/callstack/agent-device.git",
       "skillPath": "skills/agent-device/SKILL.md",
-      "skillFolderHash": "f895b564a36ba6d574656136889b6a985e2981a5",
+      "skillFolderHash": "797a4bc2a6ff3837d3a9f3c3e2780c981cf53865",
       "installedAt": "2026-09-03T06:45:26.293Z",
-      "updatedAt": "2026-10-31T15:58:34.342Z"
+      "updatedAt": "2026-11-06T14:44:35.841Z"
     },
     "herdr": {
       "source": "herdrdev/herdr",
@@ -321,9 +321,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/vercel-labs/agent-desktop.git",
       "skillPath": "skills/agent-desktop/SKILL.md",
-      "skillFolderHash": "106d618c482e1c851936db53dbff4a6c958ffb34",
+      "skillFolderHash": "ff5b74d9d1d4bdba8ae60208e14c562533e0d708",
       "installedAt": "2026-10-31T15:58:18.700Z",
-      "updatedAt": "2026-10-31T15:58:18.700Z"
+      "updatedAt": "2026-11-06T14:44:35.872Z"
     }
   },
   "dismissed": {
