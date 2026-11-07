@@ -324,6 +324,16 @@
       "skillFolderHash": "ff5b74d9d1d4bdba8ae60208e14c562533e0d708",
       "installedAt": "2026-10-31T15:58:18.700Z",
       "updatedAt": "2026-11-06T14:44:35.872Z"
+    },
+    "untangle-codebase": {
+      "source": "caldoai/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/caldoai/skills.git",
+      "skillPath": "skills/untangle-codebase/SKILL.md",
+      "skillFolderHash": "bf2f9fc0f8dcd62103862d30260007dfecd7ea35",
+      "pluginName": "untangle-codebase",
+      "installedAt": "2026-11-07T11:18:19.207Z",
+      "updatedAt": "2026-11-07T11:18:19.207Z"
     }
   },
   "dismissed": {
