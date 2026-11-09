@@ -263,13 +263,13 @@
       "updatedAt": "2026-10-01T02:48:40.821Z"
     },
     "improve-animations": {
-      "source": "emilkowalski/skill",
+      "source": "emilkowalski/skills",
       "sourceType": "github",
-      "sourceUrl": "https://github.com/emilkowalski/skill.git",
+      "sourceUrl": "https://github.com/emilkowalski/skills.git",
       "skillPath": "skills/improve-animations/SKILL.md",
       "skillFolderHash": "d3ce6f348009d830b89e7a830cc958245aea2ad6",
       "installedAt": "2026-08-31T00:52:50.904Z",
-      "updatedAt": "2026-11-06T14:44:35.578Z"
+      "updatedAt": "2026-11-09T14:50:43.499Z"
     },
     "review-animations": {
       "source": "emilkowalski/skill",
@@ -334,6 +334,15 @@
       "pluginName": "untangle-codebase",
       "installedAt": "2026-11-07T11:18:19.207Z",
       "updatedAt": "2026-11-07T11:18:19.207Z"
+    },
+    "gestures": {
+      "source": "emilkowalski/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/emilkowalski/skills.git",
+      "skillPath": "skills/gestures/SKILL.md",
+      "skillFolderHash": "d30dfa5756b880d26c07adfb364d8506f963e6e6",
+      "installedAt": "2026-11-09T14:50:43.488Z",
+      "updatedAt": "2026-11-09T14:50:43.488Z"
     }
   },
   "dismissed": {
